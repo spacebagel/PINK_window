@@ -1,0 +1,3 @@
+### Simple pink window and nothing more...
+#### 🦩Screenshot:
+![Screen](https://github.com/spacebagel/PINK_window/assets/165411846/98706f49-01c3-4e1e-8c1f-670c8c0dee39)
