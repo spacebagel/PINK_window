@@ -1,0 +1,49 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <SolidColorBrush x:Key="PrettyPowerPinkColor" Color="#E37E95"/>
+    <SolidColorBrush x:Key="PrettyWhiteColor" Color="#F5CDD6"/>
+
+    <Style TargetType="Border" x:Key="ButtonBorderStyle">
+        <Setter Property="VerticalAlignment" Value="Stretch"/>
+        <Setter Property="HorizontalAlignment" Value="Stretch"/>
+        <Setter Property="BorderThickness" Value="2"/>
+        <Setter Property="Background" Value="{StaticResource PrettyPowerPinkColor}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource PrettyPowerPinkColor}"/>
+        <Setter Property="CornerRadius" Value="3"/>
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Background">
+            <Setter.Value>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                            <RotateTransform Angle="-54.462" CenterY="0.5" CenterX="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="White" Offset="0"/>
+                    <GradientStop Color="#FFEB95A8" Offset="1"/>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <Style TargetType="Border" x:Key="WindowButtonBorderStyle" BasedOn="{StaticResource ButtonBorderStyle}">
+        <Setter Property="Margin" Value="2 5 0 5"/>
+        <Setter Property="Width" Value="20"/>
+    </Style>
+
+    <Style TargetType="Grid" x:Key="WindowButtonGridStyle">
+        <Setter Property="VerticalAlignment" Value="Stretch"/>
+        <Setter Property="HorizontalAlignment" Value="Stretch"/>
+        <Setter Property="Background" Value="#FFF5CDD6"/>
+        <Setter Property="Margin" Value="3"/>
+    </Style>
+
+    <Style TargetType="Border" x:Key="BaseBorderStyle">
+        <Setter Property="BorderThickness" Value="2"/>
+    </Style>
+    
+</ResourceDictionary>
